@@ -1,0 +1,10 @@
+# Node
+node_modules/
+
+# Cypress artefatos
+cypress/videos/
+cypress/screenshots/
+
+# Sistema
+.DS_Store
+.env
