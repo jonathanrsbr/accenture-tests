@@ -5,3 +5,5 @@ Cypress.Commands.add('hideAdIfExists', () => {
     }
   });
 });
+
+console.log('✅ commands.js loaded');

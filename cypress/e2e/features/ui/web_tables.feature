@@ -3,6 +3,7 @@ Feature: Manage records in Web Tables
   @webtables @crud
   Scenario: Successfully create, edit, and delete a single record in Web Tables
     Given I open the demoqa home page
+    And I hide the ad if it exists
     And I go to the Web Tables page through Elements menu
 
     When I click the "Add" button to create a new record  
@@ -25,6 +26,7 @@ Feature: Manage records in Web Tables
   @webtables @mass
   Scenario: Dynamically create and delete multiple records in Web Tables
     Given I open the demoqa home page
+    And I hide the ad if it exists
     And I go to the Web Tables page through Elements menu
 
     When I create 12 new random records  

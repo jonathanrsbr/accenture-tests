@@ -1,24 +1,24 @@
 class WebTablesPage {
-goToWebTables() {
-  cy.get('.card.mt-4.top-card')
-    .contains('Elements')
-    .should('be.visible')
-    .click();
+  goToWebTables() {
+    cy.get('.card.mt-4.top-card')
+      .contains('Elements')
+      .should('be.visible')
+      .click();
 
-  cy.contains('Web Tables').should('be.visible').click();
-}
+    cy.contains('Web Tables').should('be.visible').click();
+  }
 
   clickAddButton() {
     cy.get('#addNewRecordButton').click();
   }
 
   fillRegistrationForm({ firstName, lastName, email, age, salary, department }) {
-    cy.get('#firstName').should('be.visible').clear().type(firstName);
-    cy.get('#lastName').should('be.visible').clear().type(lastName);
-    cy.get('#userEmail').should('be.visible').clear().type(email);
-    cy.get('#age').should('be.visible').clear().type(age);
-    cy.get('#salary').should('be.visible').clear().type(salary);
-    cy.get('#department').should('be.visible').clear().type(department);
+    cy.get('#firstName').clear().type(firstName);
+    cy.get('#lastName').clear().type(lastName);
+    cy.get('#userEmail').clear().type(email);
+    cy.get('#age').clear().type(age);
+    cy.get('#salary').clear().type(salary);
+    cy.get('#department').clear().type(department);
   }
 
   submitForm() {
@@ -30,13 +30,11 @@ goToWebTables() {
   }
 
   editRecord(email) {
-    // Localiza a linha com o e-mail e clica no botão de edição correspondente
     cy.get('.rt-tr-group').contains(email).parents('.rt-tr-group')
       .find('[id^="edit-record-"]').click({ force: true });
   }
 
   deleteRecord(email) {
-    // Localiza a linha com o e-mail e clica no botão de deletar correspondente
     cy.get('.rt-tr-group').contains(email).parents('.rt-tr-group')
       .find('[id^="delete-record-"]').click({ force: true });
   }
