@@ -13,5 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^14.4.1"
+  },
+  "dependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1"
   }
 }
