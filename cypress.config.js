@@ -7,8 +7,9 @@ module.exports = defineConfig({
   e2e: {
     baseUrl: "https://demoqa.com/",
     supportFile: "cypress/support/e2e.js",
-    specPattern: "cypress/e2e/**/*.feature",
+    specPattern: "cypress/e2e/features/**/*.feature",
     chromeWebSecurity: false,
+    
     async setupNodeEvents(on, config) {
       await addCucumberPreprocessorPlugin(on, config);
 
@@ -20,6 +21,6 @@ module.exports = defineConfig({
       );
 
       return config;
-    },
-  },
+    }
+  }
 });

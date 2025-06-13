@@ -1,5 +1,5 @@
 import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor';
-import SortablePage from '../../../support/page_objects/SortablePage';
+import SortablePage from '../page_objects/SortablePage';
 
 Given('I open the demoqa home page', () => {
   cy.visit('/');
