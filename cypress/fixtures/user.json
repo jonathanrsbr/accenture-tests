@@ -1,0 +1,15 @@
+{
+  "firstName": "Jhon",
+  "lastName": "Doe",
+  "email": "teste@gmail.com",
+  "gender": "Male",
+  "mobile": "8512345678",
+  "birthYear": "2025",
+  "birthMonth": "June",
+  "birthDay": "13",
+  "subjects": ["Maths"],
+  "hobbies": ["Sports"],
+  "address": "4 Privet Drive, Little Whinging, Surrey",
+  "state": "NCR",
+  "city": "Delhi"
+}
