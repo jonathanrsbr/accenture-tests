@@ -12,7 +12,6 @@ class SortablePage {
       'Six'
     ];
 
-    // Move itens para o topo em ordem reversa, simulando drag and drop
     items.slice().reverse().forEach((item, index) => {
       cy.contains('.list-group-item', item)
         .drag('.list-group-item:first', { force: true });

@@ -16,6 +16,7 @@
     "@badeball/cypress-cucumber-preprocessor": "^22.1.0",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.5",
     "cypress": "^14.4.1",
+    "cypress-wait-until": "^3.0.2",
     "esbuild": "^0.25.5"
   },
   "@badeball/cypress-cucumber-preprocessor": {
