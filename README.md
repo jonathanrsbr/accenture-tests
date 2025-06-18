@@ -89,10 +89,35 @@ cypress/
 - **@badeball/cypress-cucumber-preprocessor** for Cypress + Cucumber integration
 - **Page Object Model** for test organization
 
+## 🧹 Code Quality & Automation
+
+This project is fully integrated with:
+
+- **ESLint**: Enforces code quality and best practices, with rules tailored for Cypress and JavaScript.
+- **Prettier**: Automatically formats code for consistency.
+- **lint-staged**: Runs ESLint and Prettier only on staged files before each commit.
+- **Husky**: Sets up Git hooks to ensure all code passes linting and formatting before being committed.
+
+**How it works:**  
+Whenever you commit, Husky triggers lint-staged, which runs ESLint and Prettier on your changes. If any issues are found, the commit is blocked until they're fixed—ensuring only clean, standardized code enters the repository.
+
+---
+
+## 🚦 Continuous Integration (CI/CD)
+
+Soon, this project will include a **GitHub Actions** workflow for CI/CD.  
+The pipeline will:
+
+- Install dependencies
+- Run lint and formatting checks
+- Execute all automated tests (UI and API)
+
+This ensures every push and pull request is automatically validated for code quality and test reliability.
+
 ---
 
 ## 🙋‍♂️ Author
 
-Made with dedication by [Jonathan Sales](https://www.linkedin.com/in/jonathan-sales-44580b1b3/).
+Made by [Jonathan Sales](https://www.linkedin.com/in/jonathan-sales-44580b1b3/).
 
 ---
