@@ -103,16 +103,17 @@ Whenever you commit, Husky triggers lint-staged, which runs ESLint and Prettier 
 
 ---
 
-## 🚦 Continuous Integration (CI/CD)
+## 🚦 Continuous Integration (CI)
 
-Soon, this project will include a **GitHub Actions** workflow for CI/CD.  
-The pipeline will:
+Automated CI workflow using **GitHub Actions**, designed to ensure code quality and test reliability on every push or pull request.
 
-- Install dependencies
-- Run lint and formatting checks
-- Execute all automated tests (UI and API)
+**Workflow steps:**
+- Install project dependencies
+- Run lint and formatting checks to enforce coding standards
+- Execute all automated tests (UI and API) with Cypress in headless mode
+- Automatically upload Cypress screenshots and videos in case of test failures for easier debugging
 
-This ensures every push and pull request is automatically validated for code quality and test reliability.
+This guarantees that all code changes are thoroughly validated before merging.
 
 ---
 
