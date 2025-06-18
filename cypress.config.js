@@ -1,26 +1,26 @@
-const { defineConfig } = require("cypress");
-const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
-const createEsbuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
-const addCucumberPreprocessorPlugin = require("@badeball/cypress-cucumber-preprocessor").addCucumberPreprocessorPlugin;
+import { defineConfig } from 'cypress'
+import createBundler from '@bahmutov/cypress-esbuild-preprocessor'
+import { createEsbuildPlugin } from '@badeball/cypress-cucumber-preprocessor/esbuild'
+import { addCucumberPreprocessorPlugin } from '@badeball/cypress-cucumber-preprocessor'
 
-module.exports = defineConfig({
+export default defineConfig({
   e2e: {
-    baseUrl: "https://demoqa.com/",
-    supportFile: "cypress/support/e2e.js",
-    specPattern: "cypress/e2e/features/**/*.feature",
+    baseUrl: 'https://demoqa.com/',
+    supportFile: 'cypress/support/e2e.js',
+    specPattern: 'cypress/e2e/features/**/*.feature',
     chromeWebSecurity: false,
-    
+
     async setupNodeEvents(on, config) {
-      await addCucumberPreprocessorPlugin(on, config);
+      await addCucumberPreprocessorPlugin(on, config)
 
       on(
-        "file:preprocessor",
+        'file:preprocessor',
         createBundler({
           plugins: [createEsbuildPlugin(config)],
         })
-      );
+      )
 
-      return config;
-    }
-  }
-});
+      return config
+    },
+  },
+})

@@ -36,6 +36,7 @@ This repository demonstrates modern test automation practices, including:
 ## ⚙️ Installation
 
 1. Clone this repository:
+
    ```bash
    git clone https://github.com/your-user/cypress-accenture.git
    cd cypress-accenture
@@ -51,11 +52,13 @@ This repository demonstrates modern test automation practices, including:
 ## 🧪 Running the Tests
 
 ### Headless mode (CLI):
+
 ```bash
 npm run cypress:run
 ```
 
 ### Interactive mode (Cypress UI):
+
 ```bash
 npm run cypress:open
 ```
