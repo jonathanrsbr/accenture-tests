@@ -69,15 +69,15 @@ npm run cypress:open
 
 ```
 cypress/
-├── e2e/                 # Feature files and test scenarios (Gherkin)
+├── e2e/                    # Feature files and test scenarios (Gherkin)
 │   ├── features/
 │   │   ├── api/
 │   │   └── ui/
-├── fixtures/            # Test data and mocks
+├── fixtures/               # Test data and mocks
 ├── support/
-│   ├── page_objects/    # Page Object Model implementations
-│   ├── step_definitions/# Step definitions for BDD scenarios
-│   └── front_commands.js# Custom Cypress commands
+│   ├── page_objects/       # Page Object Model implementations
+│   ├── step_definitions/   # Step definitions for BDD scenarios
+│   └── front_commands.js   # Custom Cypress commands
 ```
 
 ---
